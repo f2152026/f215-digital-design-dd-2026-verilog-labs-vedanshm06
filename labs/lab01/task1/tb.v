@@ -29,7 +29,7 @@ module tb;
     #5 t_a = 0; t_b = 0; t_cin = 1;
     #5 t_a = 0; t_b = 1; t_cin = 0;
     #5 t_a = 0; t_b = 1; t_cin = 1;
-    #5 t_a = 1; t_b = 0; t_cin = 0;
+    #5 t_a = 1; t_b = 0; t_cin = 0; // this is just to construct the normal truth table that we alreafy make in theory
     #5 t_a = 1; t_b = 0; t_cin = 1;
     #5 t_a = 1; t_b = 1; t_cin = 0;
     #5 t_a = 1; t_b = 1; t_cin = 1;
