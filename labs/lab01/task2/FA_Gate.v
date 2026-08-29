@@ -3,7 +3,7 @@
 // From this task onward, every gate/assign you write in this lab should
 // have an explicit delay -- it's the default way we'll be writing Verilog
 // from here on, not a special add-on.
-//
+//   
 // Part (a): add a CONSTANT delay to every gate below, e.g.:
 //   xor #(2) (ps, a, b);
 // Do this for all five gates, then complete ripple_adder.v (this folder)
@@ -26,10 +26,10 @@ module FA_Gate(
 );
   wire ps, pc1, pc2;
 
-  xor (ps,  a,   b);
-  and (pc1, a,   b);
-  xor (sum, cin, ps);
-  and (pc2, cin, ps);
-  or  (cout, pc1, pc2);
+  xor #(2) (ps,  a,   b);
+  and #(2) (pc1, a,   b);
+  xor #(2) (sum, cin, ps);
+  and #(2) (pc2, cin, ps);
+  or  #(2) (cout, pc1, pc2);
 
 endmodule
